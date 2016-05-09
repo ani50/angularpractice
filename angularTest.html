@@ -1,0 +1,27 @@
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+ <script src="/Users/aniket.singh/Documents/TestAngular/practice.js"></script>
+ </head>
+ <body  ng-app"rootApp">
+ <div id="id1" ng-app="myapp" ng-controller="HelloController">
+	 <h2>Welcome {{helloTo.title}} to the world of Tutorialspoint!</h2>
+	 <p>Enter your Name: <input type="text" ng-model="name"></p>
+	 <p>Hello <span ng-bind="name"></span>!</p>
+	 <p>List of Countries with locale:</p>
+	 <ol>
+	 <li ng-repeat="country in countries|filter:name|orderBy:'locale'">
+	 {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+	 </li>
+	 </ol>
+ </div>
+
+ <div id="id2" ng-app="studentApp" ng-controller="StudentController" ng-init="quantity=1;cost=30;
+student={firstname:'Mahesh',lastname:'Parashar',rollno:101};marks=[80,90,75
+,73,60]">
+ <p>Hello {{student.firstname + " " + student.lastname}}!</p>
+ <p>Expense on Books : {{cost * quantity}} Rs</p>
+ <p>Roll No: {{student.rollno}}</p>
+ <p>Marks(Math): {{marks[3]}}</p>
+</div>
+ </body>
+</html>
