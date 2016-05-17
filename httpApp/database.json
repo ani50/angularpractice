@@ -1,0 +1,31 @@
+{
+	"records":[
+		{
+			"Name":"Aniket",
+			"Age":"27",
+			"Color":"green"
+		},
+		{
+			"Name":"MP",
+			"Age":"27",
+			"Color":"red"
+		},
+		{
+			"Name":"BABA",
+			"Age":"8008",
+			"Color":"blue"
+		},
+		{
+			"Name":"aloo arjun",
+			"Age":"34",
+			"Color":"blue"
+		},
+		{
+			"Name":"BABA",
+			"Age":"45",
+			"Color":"black"
+		}
+
+
+	]
+}

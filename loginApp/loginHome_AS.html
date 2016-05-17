@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <title>Angular JS Routing</title>
+      <script src = "//localhost:8000/angular.js"></script>
+      <script src = "//localhost:8000/angular-route.js"></script>
+      <script src="//localhost:8000/loginApp/loginController_AS.js"></script>
+
+      <style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: #ffffff;
+         }
+      </style>
+      
+   </head>
+   <body>
+      <div ng-app = "mainApp">
+        <div ng-view></div>
+      </div>
+   </body>
+</html>

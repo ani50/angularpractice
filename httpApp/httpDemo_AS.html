@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title>Angular JS HTTPServices</title>
+      <script src = "//localhost:8000/angular.js"></script>
+      <script src="//localhost:8000/httpApp/httpController_AS.js"></script>
+
+      <style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: #ffffff;
+         }
+      </style>
+      
+   </head>
+   <body>
+      <div ng-app = "mainApp">
+        <div ng-controller="peopleDetail">
+        <h2>Names and Age of people:</h2>
+           <ul>
+              <li ng-repeat="person in persons | filter:globalSearch">
+               {{"Name: "+person.Name+" Age:  "+person.Age+" Color: "+person.Color}}
+              </li>
+           </ul>
+        </div>
+        <div id="searchBoxes">
+          Global Search Filter:<input type="text" name="" ng-model="globalSearch.$"><br>
+          Name Search Filter:<input type="text" name="" ng-model="globalSearch.Name"><br>
+          Age Search Filter:<input type="text" name="" ng-model="globalSearch.Age"><br>
+          Color Search Filter:<input type="text" name="" ng-model="globalSearch.Color"><br>
+          
+        </div>
+      </div>
+   </body>
+</html>
