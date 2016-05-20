@@ -1,0 +1,20 @@
+<html>
+   <head>
+      <title>Angular JS HTTPServices</title>
+      <script src = "//localhost:8000/angular.js"></script>
+      <script src="//localhost:8000/factories/factory_AS.js"></script>
+      
+   </head>
+   <body>
+      <div ng-app = "mainApp">
+        <div ng-controller="serviceDetail1">
+        <button ng-click="generateRandom1();">Generate Random No1.</button><br>
+        {{randNo1}}<br>
+        </div><br>
+        <div ng-controller="serviceDetail2">
+        <button ng-click="generateRandom2();">Generate Random No2.</button><br>
+        {{randNo2}}<br>
+        </div>
+      </div>
+   </body>
+</html>
